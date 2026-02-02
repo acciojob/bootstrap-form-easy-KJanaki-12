@@ -9,33 +9,55 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<div class="form-floating">
-	<form method="post" >
+	<form method="post" class="needs-validation was-validated">
 		<h1>Internship Form</h1>
+		<div class="mb-3">
 		<label for="first-name-input" class="form-label">First Name</label>
 		<input id="first-name-input" class="form-control" type="text" required>
+		<div class="invalid-feedback">First name required</div>
+		</div>
 
+		<div class="mb-3">
 		<label for="last-name-input" class="form-label">Last Name</label>
 		<input id="last-name-input" class="form-control" type="text" required>
+		<div class="invalid-feedback">Last name required</div>
+		</div>
 
+		<div class="mb-3">
 		<label for="email-input" class="form-label">Email Address</label>
 		<input id="email-input" class="form-control" type="email" required>
-
+		<div class="invalid-feedback">Email required</div>
+		</div>
+		
+		<div class="mb-3">
 		<label for="college-input" class="form-label">College Name</label>
 		<input id="college-input" class="form-control" type="text" required>
-
+		<div class="invalid-feedback">Pleace provide a volid college</div>
+		</div>
+		
+		<div class="mb-3">
 		<label for="grad-year-select" class="form-label">Graduation Year</label>
-		<select id="grad-year-select" class="form-select" aria-required>
+		<select id="grad-year-select" class="form-select" required>
+			<option selected>chosee...</option>
 			<option>2020</option>
 			<option>2021</option>
 			<option>2022</option>
 			<option>2023</option>
 		</select>
+		<div class="invalid-feedback">Pleace select a valid Graduation year.</div>
+		</div>
 
+		<div class="mb-3">
 		<label for="roll-no-input" class="form-label">Roll No.</label>
 		<input id="roll-no-input" class="form-control" type="text" required>
+		<div class="invalid-feedback">Pleace provid a valid Roll No.</div>
+		</div>
 
+		<div class="mb-3">
 		<input id="conditions-checkbox" type="checkbox" class="form-check-input">
 		<label for="conditions-checkbox" class="form-label">Agree to terms and conditions</label>
+		<div class="invalid-feedback">You must agree before submiting.</div>
+		</div>
 		
 		<button class="btn btn-primary" type="submit">Submit form</button>
 		
